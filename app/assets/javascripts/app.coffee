@@ -1,4 +1,4 @@
-receta = angular.module('receta',[
+bucket_list = angular.module('bucket_list',[
   'templates',
   'ngRoute',
   'ngResource',
@@ -7,7 +7,7 @@ receta = angular.module('receta',[
   'angular-flash.flash-alert-directive'
 ])
 
-receta.config([ '$routeProvider', 'flashProvider',
+bucket_list.config([ '$routeProvider', 'flashProvider',
   ($routeProvider,flashProvider)->
 
     flashProvider.errorClassnames.push("alert-danger")

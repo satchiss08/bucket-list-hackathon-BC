@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '4.2.1'
 gem 'pg'
 gem 'sass'
 gem 'sass-rails'
@@ -11,6 +11,7 @@ gem 'jbuilder'
 
 gem 'bower-rails'
 gem 'angular-rails-templates'
+gem 'rest-client'
 
 gem "foreman"
 group :production, :staging do
