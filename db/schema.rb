@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140309184135) do
+ActiveRecord::Schema.define(version: 20150613180918) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "activities", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "place",      null: false
+    t.datetime "started_at"
+    t.datetime "ended_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.integer  "activity_id"
+    t.integer  "bc_product_id", null: false
+    t.string   "status",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "products", ["activity_id"], name: "index_products_on_activity_id", using: :btree
 
   create_table "recipes", force: :cascade do |t|
     t.string   "name"
@@ -22,5 +41,14 @@ ActiveRecord::Schema.define(version: 20140309184135) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "activity_id"
+    t.text     "gearhead_review", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "reviews", ["activity_id"], name: "index_reviews_on_activity_id", using: :btree
 
 end
