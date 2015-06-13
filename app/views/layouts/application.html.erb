@@ -8,6 +8,890 @@
 </head>
 <body>
 
+<aside class="js-header-panel ui-header-panel js-offcanvas-navigation qa-header-panel">
+  <div class="hp-bar-wrap">
+    <nav class="hp-menu js-hp-menu">
+      <a class="hp-item hp-item-home" href="/">Home</a>
+      <a class="hp-item hp-item-shop ui-current-tab js-hp-menu-btn js-hp-shop-btn" data-tab="shop" href="/">Shop</a>
+      <a class="hp-item hp-item-art qa-blog js-hp-menu-btn js-hp-art-btn" data-tab="articles" href="/explore">Articles</a>
+      <a class="hp-item hp-item-detour js-hp-detour-btn js-hp-menu-btn" data-tab="detour" href="https://detour.backcountry.com?ref=s-bc_t-header_i-flyoutImage">Detour</a>
+      <a class="hp-item hp-item-sac" data-tab="sac" href="http://www.steepandcheap.com/?CMP_ID=odat_sac_bcnav1000226">Steep &amp; Cheap</a>
+      <div class="hp-item hp-item-acct js-hp-menu-btn js-hp-acct qa-account-menu" data-tab="acct">
+        <span class="ui-account head-my-account-link js-head-my-account-link">Account</span>
+      <div class="ui-hp-tab-column ui-hp-tab-column0 js-hp-acct-tab-column0 ui-tab-hidden qa-account-menu-options account-menu js-account-menu">
+    <div class="hp-tab-head"></div>
+    <div class="hp-tab-body ui-tab-body">
+        <a class="js-login-modal qa-head-my-account-link ui-tab-node" data-redirect-url="/Store/account/account.jsp" data-modal-header-msg="">
+    My Account
+</a>
+<a class="js-login-modal ui-tab-node qa-order-status-link" data-redirect-url="/Store/account/orderHistory.jsp" data-modal-header-msg="">
+    Order Status
+</a>
+ <a class="js-wishlist-login-modal ui-tab-node qa-wishlist-link" href="/Store/cart/cart.jsp#wishlist">
+    Wishlist
+</a>
+<a class="js-profile-login-modal qa-head-my-profile-link ui-tab-node">
+    Public Profile
+</a>
+
+        <a class="btn-secondary js-login-modal ui-account-btn qa-sign-link-link">Sign In</a>
+        <div class="js-gearhead-banner gearhead-banner">
+    <h4 class="js-gearhead-banner-title ui-gh-banner-title">Your Personal Gearhead Connection</h4>
+    <a href="/Store/community/gearheadLanding.jsp">
+        <span class="btn choose-gearhead-btn js-gearhead-btn">Connect with a Gearhead</span>
+         <img class="js-lazyload js-notifications-banner notifications-banner" data-src="//content.backcountry.com/promo_upload/bcs/2014/gearhead-promo.jpg">
+    </a>
+</div>
+
+    </div>
+</div>
+</div>
+      <span class="js-live-chat ui-live-chat">
+        <span>Live Chat</span>
+        
+            1-800-409-4502
+        </span>
+    </nav>
+  </div>
+  <div class="js-hp-tab-wrap ui-hp-tab-wrap"></div>
+</aside>
+
+<header class="main-header-wrap">
+  <div class="main-header">
+    <div class="header-icons-wrap">
+      <a class="header-menu js-header-menu qa-header-menu"></a>
+
+      <a class="header-logo" href="/" itemscope="" itemtype="http://schema.org/SportingGoodsStore" title="Backcountry.com Logo">
+            <img alt="Backcountry.com" itemprop="logo" src="bc-logo.png">
+            <span itemprop="name">Backcountry.com</span>
+          </a>
+        </div>
+
+    <div class="header-cart-wrap js-mini-cart-holder">
+      <form id="ajaxform-remove" action="/Store/cart/cart.jsp?_DARGS=/Store/cart/includes/removeFromCartForm.jsp.ajaxform-remove" class="hidden" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"> </div><div style="display:none"><input value="4632829721342636443" type="hidden"> </div><input name="/atg/commerce/order/purchase/CartModifierFormHandler.removalCommerceIds" value="" type="hidden"><input name="_D:/atg/commerce/order/purchase/CartModifierFormHandler.removalCommerceIds" value=" " type="hidden"><input name="/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrderSuccessURL" value="/Store/cart/currentOrderDetails.json.jsp" type="hidden"><input name="_D:/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrderSuccessURL" value=" " type="hidden"><input name="/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrderErrorURL" value="/Store/cart/currentOrderDetails.json.jsp" type="hidden"><input name="_D:/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrderErrorURL" value=" " type="hidden"><input name="/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrder" type="submit"><input name="_D:/atg/commerce/order/purchase/CartModifierFormHandler.removeItemFromOrder" value=" " type="hidden"><div style="display:none"><input name="_DARGS" value="/Store/cart/includes/removeFromCartForm.jsp.ajaxform-remove" type="hidden"> </div></form><a class="header-cart js-header-cart qa-header-cart" href="/Store/cart/cart.jsp">
+        <span class="cart-count js-cart-count qa-cart-count" style="display: none;">0</span>
+        <span class="cart-icon"></span>
+      </a>
+    <div class="ui-mini-cart js-mini-cart qa-mini-cart" style="display: none;">
+    <div class="ui-mini-cart-items js-mini-cart-items"></div>
+    <div class="ui-mini-cart-footer js-mini-cart-footer">
+        <div>
+            Cart Subtotal: <span class="js-mini-cart-order-subtotal qa-mini-cart-subtotal">$0.00</span>
+        </div>
+        <a class="edit-cart qa-mini-cart-edit-cart js-proceed-to-cart-btn" href="/Store/cart/cart.jsp"> Edit Cart </a>
+        <a class="btn-icon checkout-btn qa-mini-cart-checkout-btn js-checkout-btn" href="/Store/checkout/checkout.jsp">
+            Checkout
+        </a>
+    </div>
+</div>
+</div>
+
+  <div class="header-nav js-header-nav">
+          <nav class="qa-cat-nav" role="navigation">
+  <ul class="js-flyout-nav ui-flyout-nav">
+    <li class="js-cat-nav-item ui-cat-nav-item qa-brands-link qa-cat-nav-c1" data-id="0"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link" href="/Store/catalog/shopAllBrands.jsp?fl=true" data-id="0">Brands</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-0 ui-flyout-brand">
+    <div class="ui-flyout-inner">
+        
+            <div class="ui-flyout-brand-thumbnails">
+                <nav>
+                    
+                        <a href="/the-north-face?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="The North Face" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/NorthFacelogo2010.jpg"></a>
+                    
+                        <a href="/patagonia?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Patagonia" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/patagonia.jpg"></a>
+                    
+                        <a href="/marmot?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Marmot" class="js-lazyload" src="http://content.backcountry.com/promo_upload/brand/logo_monochrome/marmot.png"></a>
+                    
+                        <a href="/arcteryx?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Arc'teryx" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/arcteryx.jpg"></a>
+                    
+                        <a href="/black-diamond?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Black Diamond" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/BlackDiamondLogo.jpg"></a>
+                    
+                        <a href="/prana?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="prAna" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/pranalogo.jpg"></a>
+                    
+                        <a href="/la-sportiva?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="La Sportiva" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/la_sportiva.jpg"></a>
+                    
+                        <a href="/osprey-packs?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Osprey Packs" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/Ospreylogo.jpg"></a>
+                    
+                        <a href="/mountain-hardwear?fl=true" class="flyout-c3-link qa-cat-nav-c3"><img alt="Mountain Hardwear" class="js-lazyload" src="http://content.backcountry.com/images/brand/thumb/MHW2012.jpg"></a>
+                    
+                </nav>
+            </div>
+            <div class="ui-flyout-top-brands">
+                <h3 class="flyout-c2-header header-4">Top Brands</h3>
+                
+                    <div class="ui-flyout-category ui-flyout-col half">
+                        <nav class="flyout-c3-links">
+                            
+                                <a href="/salomon?fl=true" class="flyout-c3-link qa-cat-nav-c3">Salomon</a>
+                            
+                                <a href="/mammut?fl=true" class="flyout-c3-link qa-cat-nav-c3">Mammut</a>
+                            
+                                <a href="/columbia?fl=true" class="flyout-c3-link qa-cat-nav-c3">Columbia</a>
+                            
+                                <a href="/norrona?fl=true" class="flyout-c3-link qa-cat-nav-c3">Norrøna</a>
+                            
+                                <a href="/oakley?fl=true" class="flyout-c3-link qa-cat-nav-c3">Oakley</a>
+                            
+                                <a href="/big-agnes?fl=true" class="flyout-c3-link qa-cat-nav-c3">Big Agnes</a>
+                            
+                                <a href="/outdoor-research?fl=true" class="flyout-c3-link qa-cat-nav-c3">Outdoor Research</a>
+                            
+                                <a href="/canada-goose?fl=true" class="flyout-c3-link qa-cat-nav-c3">Canada Goose</a>
+                            
+                                <a href="/smartwool?fl=true" class="flyout-c3-link qa-cat-nav-c3">SmartWool</a>
+                            
+                                <a href="/kuhl?fl=true" class="flyout-c3-link qa-cat-nav-c3">KÜHL</a>
+                            
+                                <a href="/icebreaker?fl=true" class="flyout-c3-link qa-cat-nav-c3">Icebreaker</a>
+                            
+                                <a href="/smith?fl=true" class="flyout-c3-link qa-cat-nav-c3">Smith</a>
+                            
+                        </nav>
+                    </div>
+                    <div class="ui-flyout-category ui-flyout-col half">
+                        <nav class="flyout-c3-links">
+                            
+                                <a href="/dakine?fl=true" class="flyout-c3-link qa-cat-nav-c3">DAKINE</a>
+                            
+                                <a href="/santa-cruz-bicycles?fl=true" class="flyout-c3-link qa-cat-nav-c3">Santa Cruz Bicycles</a>
+                            
+                                <a href="/castelli?fl=true" class="flyout-c3-link qa-cat-nav-c3">Castelli</a>
+                            
+                                <a href="/petzl?fl=true" class="flyout-c3-link qa-cat-nav-c3">Petzl</a>
+                            
+                                <a href="/under-armour?fl=true" class="flyout-c3-link qa-cat-nav-c3">Under Armour</a>
+                            
+                                <a href="/shimano?fl=true" class="flyout-c3-link qa-cat-nav-c3">Shimano</a>
+                            
+                                <a href="/giro?fl=true" class="flyout-c3-link qa-cat-nav-c3">Giro</a>
+                            
+                                <a href="/burton?fl=true" class="flyout-c3-link qa-cat-nav-c3">Burton</a>
+                            
+                                <a href="/louis-garneau?fl=true" class="flyout-c3-link qa-cat-nav-c3">Louis Garneau</a>
+                            
+                                <a href="/therm-a-rest?fl=true" class="flyout-c3-link qa-cat-nav-c3">Therm-a-Rest</a>
+                            
+                                <a href="/thule?fl=true" class="flyout-c3-link qa-cat-nav-c3">Thule</a>
+                            
+                                <a href="/scarpa?fl=true" class="flyout-c3-link qa-cat-nav-c3">Scarpa</a>
+                            
+                        </nav>
+                    </div>
+                
+            </div>
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/sc/oru-kayaks?fl=true&amp;INT_ID=IB16750"> 
+        <img alt="Oru Kayaks" class="js-lazyload" src="http://content.backcountry.com/promo_upload/flyout_assets/oru-editorial-small.gif"> The Backstory: <br>Oru Kayaks <p>Explore Outside the Box</p> 
+    </a> </div> 
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/sc/osloh?INT_ID=IB16705"> 
+        <img alt="Osloh" class="js-lazyload" src="http://content.backcountry.com/promo_upload/flyout_assets/osloh-editorial-small.jpg"> The Backstory: Osloh <p>Exceptional Bicycle Jeans for Everyday Wear</p> 
+    </a> </div> </div>
+    </div> <!-- / ui-flyout-inner -->
+    
+        <a href="/Store/catalog/shopAllBrands.jsp?fl=true" class="flyout-brands-all-brands-btn">View all brands</a>
+    
+</div></li>
+    <li class="js-justin-facet js-cat-nav-item ui-cat-nav-item qa-cat-nav-c1" data-id="1" data-category-id="bcsCat100003" data-title="Men"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link js-" href="/mens-clothing?fl=true" data-id="1">Men</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-1 ui-flyout">
+    <div class="ui-flyout-inner">
+        
+            
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            <a href="/mens-clothing?fl=true" class="flyout-c2-header header-4">Clothing</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/mens-jackets?fl=true" class="flyout-c3-link qa-cat-nav-c3">Jackets</a><a href="/mens-hoodies-sweaters?fl=true" class="flyout-c3-link qa-cat-nav-c3">Hoodies &amp; Sweaters</a><a href="/mens-shirts?fl=true" class="flyout-c3-link qa-cat-nav-c3">Shirts</a><a href="/mens-pants?fl=true" class="flyout-c3-link qa-cat-nav-c3">Pants</a><a href="/mens-shorts?fl=true" class="flyout-c3-link qa-cat-nav-c3">Shorts</a>
+                            
+                                
+                            
+                                
+                            
+                                <a href="/mens-underwear-baselayers?fl=true" class="flyout-c3-link qa-cat-nav-c3">Baselayers</a>
+                            
+                                <a href="/rc/mens-swimwear?fl=true" class="flyout-c3-link qa-cat-nav-c3">Swimwear</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/mens-shoes-boots?fl=true" class="flyout-c2-header header-4">Footwear</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/mens-footwear-boots?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Men%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Boots</a>
+                            
+                                <a href="/rc/mens-footwear-shoes?p=category%253A2.bcs.Shoes%255C%2B%255C%2526%255C%2BFootwear.Men%2527s%255C%2BShoes%255C%2B%255C%2526%255C%2BBoots&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Shoes</a>
+                            
+                                <a href="/mens-sandals?fl=true" class="flyout-c3-link qa-cat-nav-c3">Sandals</a>
+                            
+                                <a href="/mens-slippers?fl=true" class="flyout-c3-link qa-cat-nav-c3">Slippers</a>
+                            
+                                <a href="/mens-socks?fl=true" class="flyout-c3-link qa-cat-nav-c3">Socks</a>
+                            
+                        </nav>
+                    
+                </div>
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                           <a href="/accessories?fl=true" class="flyout-c2-header header-4">Accessories</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/mens-accessories-head-and-neckwear?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Accessories&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Head &amp; Neck Wear</a>
+                            
+                                <a href="/rc/mens-accessories-eyewear?p=category%3A1.bcs.Accessories&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Eyewear</a>
+                            
+                                <a href="/gloves-mittens?fl=true" class="flyout-c3-link qa-cat-nav-c3">Gloves &amp; Mittens</a>
+                            
+                                <a href="/rc/mens-accessories-electronics?p=category%3A1.bcs.Accessories&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Electronics</a>
+                            
+                                <a href="/watches?fl=true" class="flyout-c3-link qa-cat-nav-c3">Watches</a>
+                            
+                                <a href="/rc/mens-accessories-backpacks-and-bags?fl=true" class="flyout-c3-link qa-cat-nav-c3">Backpacks &amp; Bags</a>
+                            
+                                <a href="/rc/mens-accessories-belts-and-wallets?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Accessories&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Belts &amp; Wallets</a>
+                            
+                                <a href="/accessories?fl=true" class="flyout-c3-link qa-cat-nav-c3">All</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="#" class="flyout-c2-header header-4 flyout-no-link">Shop By Activity</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/Store/catalog/search.jsp?q=Men%27s+Clothing&amp;nf=1&amp;p=category%3A1.bcs.Men%27s%5C+Clothing%7Crecommendeduse%3AHiking%5C+%5C%26%5C+Camping&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Hike &amp; Camp</a>
+                            
+                                <a href="/mens-bike-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Bike</a>
+                            
+                                <a href="/mens-ski-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Ski</a>
+                            
+                                <a href="/mens-snowboard-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Snowboard</a>
+                            
+                                <a href="/Store/catalog/search.jsp?nf=1&amp;q=Men%27s+Clothing&amp;p=category%253A1.bcs.Men%2527s%255C%2BClothing%257Cattr_recommendeduse%253AClimbing%257Cattr_recommendeduse%253ASport%255C%2BClimbing%257Cattr_recommendeduse%253AAlpine%255C%2BClimbing%257Cattr_recommendeduse%253AHiking%255C%2B%255C%252F%255C%2BClimbing&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Climb</a>
+                            
+                                <a href="/mens-running-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Run</a>
+                            
+                                <a href="/mens-fly-fishing-apparel?fl=true" class="flyout-c3-link qa-cat-nav-c3">Fly Fish</a>
+                            
+                        </nav>
+                    
+                </div>
+            
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/collection/mens-shorts?fl=true&amp;INT_ID=IB16768"> 
+        <img alt="Mens Summer Shorts" class="js-lazyload" src="http://content.backcountry.com/promo_upload/flyout_assets/mens-shorts-editorial-small.jpg"> Men's Summer Shorts <p>Styles for Every Shade of Adventure</p> 
+    </a> </div>
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/collection/new-mens-casual-shirts?INT_ID=IB16711"> 
+        <img alt="Men Shirt Collection" class="js-lazyload" src="http://content.backcountry.com/promo_upload/flyout_assets/mens-casual-editorial-small.jpg"> Step Up from <br>T-Shirts <p>New Men's Button-Downs and Polos</p> 
+    </a> </div> </div>
+    </div> <!-- / ui-flyout-inner -->
+    
+</div></li>
+    <li class="js-justin-facet js-cat-nav-item ui-cat-nav-item qa-cat-nav-c1" data-id="2" data-category-id="bcsCat200003" data-title="Women"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link" href="/womens-clothing?fl=true" data-id="2">Women</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-2 ui-flyout">
+    <div class="ui-flyout-inner">
+        
+            
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            <a href="/womens-clothing?fl=true" class="flyout-c2-header header-4">Clothing</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/womens-jackets?fl=true" class="flyout-c3-link qa-cat-nav-c3">Jackets</a>
+                            
+                                <a href="/womens-tops?fl=true" class="flyout-c3-link qa-cat-nav-c3">Tops</a><a href="/womens-pants?fl=true" class="flyout-c3-link qa-cat-nav-c3">Pants</a><a href="/womens-shorts?fl=true" class="flyout-c3-link qa-cat-nav-c3">Shorts</a>
+                            
+                                
+                            
+                                <a href="/womens-dresses-skirts?fl=true" class="flyout-c3-link qa-cat-nav-c3">Dresses &amp; Skirts</a>
+                            
+                                <a href="/womens-long-underwear-baselayers?fl=true" class="flyout-c3-link qa-cat-nav-c3">Baselayers</a>
+                            
+                                <a href="/womens-swimwear?fl=true" class="flyout-c3-link qa-cat-nav-c3">Swimwear</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/womens-shoes-boots?fl=true" class="flyout-c2-header header-4">Footwear</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/womens-footwear-boots?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Women%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Boots</a>
+                            
+                                <a href="/rc/womens-footwear-shoes?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Women%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Shoes</a>
+                            
+                                <a href="/womens-sandals?fl=true" class="flyout-c3-link qa-cat-nav-c3">Sandals</a>
+                            
+                                <a href="/womens-slippers?fl=true" class="flyout-c3-link qa-cat-nav-c3">Slippers</a>
+                            
+                                <a href="/womens-socks?fl=true" class="flyout-c3-link qa-cat-nav-c3">Socks</a>
+                            
+                        </nav>
+                    
+                </div>
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                           <a href="/accessories?fl=true" class="flyout-c2-header header-4">Accessories</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/womens-accessories-head-and-neckwear?p=category%3A2.bcs.Accessories.Women%27s%5C+Accessories&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Head &amp; Neck Wear</a>
+                            
+                                <a href="/womens-sunglasses?fl=true" class="flyout-c3-link qa-cat-nav-c3">Sunglasses</a>
+                            
+                                <a href="/womens-gloves-mittens?fl=true" class="flyout-c3-link qa-cat-nav-c3">Gloves &amp; Mittens</a>
+                            
+                                <a href="/rc/womens-accessories-electronics?p=category%3A1.bcs.Accessories&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Electronics</a>
+                            
+                                <a href="/rc/watches-for-women?fl=true&amp;p=category%3A2.bcs.Accessories.Watches&amp;nf=1" class="flyout-c3-link qa-cat-nav-c3">Watches</a>
+                            
+                                <a href="/rc/womens-accessories-handbags?p=category%3A2.bcs.Accessories.Women%27s%5C+Accessories&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Handbags</a>
+                            
+                                <a href="/Store/catalog/search.jsp?q=women%27s%20backpacks&amp;p=category%3A1.bcs.Hike%255C%2B%255C%2526%255C%2BCamp&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Backpacks</a>
+                            
+                                <a href="/womens-belts?fl=true" class="flyout-c3-link qa-cat-nav-c3">Belts</a>
+                            
+                                <a href="/accessories?fl=true" class="flyout-c3-link qa-cat-nav-c3">All</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="#" class="flyout-c2-header header-4 flyout-no-link">Shop By Activity</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/womens-hiking-apparel?p=category%3A1.bcs.Women%27s%5C+Clothing&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Hike &amp; Camp</a>
+                            
+                                <a href="/womens-bike-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Bike</a>
+                            
+                                <a href="/womens-ski-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Ski</a>
+                            
+                                <a href="/womens-snowboard-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Snowboard</a>
+                            
+                                <a href="/Store/catalog/search.jsp?q=climbing%20womens&amp;p=category%3A1.bcs.Women%2527s%255C%2BClothing&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Climb</a>
+                            
+                                <a href="/womens-running-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Run</a>
+                            
+                                <a href="/rc/womens-yoga-clothing?p=category%253A1.bcs.Women%2527s%255C%2BClothing&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Yoga</a>
+                            
+                        </nav>
+                    
+                </div>
+            
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/collection/womens-swimwear-lookbook-tops?fl=true&amp;INT_ID=IB16712"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/women-swimwear-editorial-small.jpg" alt="Swimwear Collection" class="js-lazyload"> Swimsuit Season <br>is Here <p>Suits in Every Style for Any Activity</p> 
+    </a> </div>
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/collection/spring-dresses?fl=true&amp;INT_ID=IB16542"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/spring-dresses-editorial.jpg" alt="The Long and Short of it" class="js-lazyload"> The Long and <br> Short of it <p>Spring Dresses in Every Length for Any Occasion</p> 
+    </a> </div> </div>
+    </div> <!-- / ui-flyout-inner -->
+    
+</div></li>
+    <li class="js-justin-facet js-cat-nav-item ui-cat-nav-item qa-cat-nav-c1" data-id="3" data-category-id="bcsCat3000003" data-title="Kids"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link" href="/kids-clothing?fl=true" data-id="3">Kids</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-3 ui-flyout">
+    <div class="ui-flyout-inner">
+        
+            
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                            <a href="/boys-clothing?fl=true" class="flyout-c2-header header-4">Boys</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/boys-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Boys%27%5C+Clothing&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Outerwear</a>
+                            
+                                <a href="/boys-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Clothing</a>
+                            
+                                <a href="/boys-boots-shoes?fl=true" class="flyout-c3-link qa-cat-nav-c3">Footwear</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/girls-clothing?fl=true" class="flyout-c2-header header-4">Girls</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/girls-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Girls%27%5C+Clothing&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Outerwear</a>
+                            
+                                <a href="/girls-clothing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Clothing</a>
+                            
+                                <a href="/girls-boots-shoes?fl=true" class="flyout-c3-link qa-cat-nav-c3">Footwear</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/bcs/Baby-Clothing/cat100203968/promo.html?fl=true" class="flyout-c2-header header-4">Toddlers &amp; Infants</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/rc/toddler-infants-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Toddler&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Outerwear</a>
+                            
+                                <a href="/bcs/Baby-Clothing/cat100203968/promo.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Clothing</a>
+                            
+                                <a href="/rc/baby-clothing?p=category%3A1.bcs.Shoes%5C+%5C%26%5C+Footwear&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Footwear</a>
+                            
+                        </nav>
+                    
+                </div>
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                           <a href="/kids-accessories?fl=true" class="flyout-c2-header header-4">Accessories</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/kids-hats?fl=true" class="flyout-c3-link qa-cat-nav-c3">Headwear</a>
+                            
+                                <a href="/rc/kids-eyewear?p=category%3A2.bcs.Accessories.Kids%27%5C+Accessories&amp;nf=1&amp;fl=true" class="flyout-c3-link qa-cat-nav-c3">Eyewear</a>
+                            
+                                <a href="/kids-gloves-mittens?fl=true" class="flyout-c3-link qa-cat-nav-c3">Gloves &amp; Mittens</a>
+                            
+                                <a href="/strollers-and-joggers?fl=true" class="flyout-c3-link qa-cat-nav-c3">Strollers &amp; Joggers</a>
+                            
+                        </nav>
+                    
+                        
+                           <a href="/kids-clothing?show=all&amp;p=discountPercentUS%3A%255B10%2BTO%2B*%255D&amp;nf=1&amp;fl=true" class="flyout-c2-header header-4">Sale</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                        </nav>
+                    
+                </div>
+            
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/rc/summer-camp-gear-for-kids?fl=true&amp;INT_ID=IB16746"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/kids-outdoor-editorial-small.jpg" alt="Send Them Outdoors" class="js-lazyload"> Send Them Outdoors <p>Summer Essentials for Adventurous Kids</p> 
+    </a> </div>
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/bcs/Kids-Clothing-60-to-80-Off/cat100205248/promo.html?nf=1&amp;p=category%3A1.bcs.Kids%27%5C+Clothing%7CdiscountPercentUS%3A%5B60+TO+*%5D&amp;INT_ID=IB15582&amp;fl=true&amp;INT_ID=IB16548"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/kids-outlet-editorial.jpg" alt="Kid" s="" outlet="" deals'="" class="js-lazyload"> Kid's Outlet Deals <p>From 60% - 80% Off</p> 
+    </a> </div></div>
+    </div> <!-- / ui-flyout-inner -->
+    
+</div></li>
+    <li class="js-cat-nav-item ui-cat-nav-item qa-cat-nav-c1" data-id="4"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link" href="/sc/activities?fl=true" data-id="4">Activities</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-4 ui-flyout-activities">
+    <div class="ui-flyout-inner">
+        
+            <div class="ui-flyout-act-col ui-flyout-col">
+                <h3 class="flyout-c2-header header-4">Shop by Activity</h3>
+                <nav class="flyout-c3-links">
+                    
+                        <a href="/hike-camp?fl=true" class="flyout-c3-link qa-cat-nav-c3">Hike &amp; Camp</a>
+                    
+                        <a href="/bike?fl=true" class="flyout-c3-link qa-cat-nav-c3">Bike</a>
+                    
+                        <a href="/run?fl=true" class="flyout-c3-link qa-cat-nav-c3">Run</a>
+                    
+                        <a href="/climb?fl=true" class="flyout-c3-link qa-cat-nav-c3">Climb</a>
+                    
+                        <a href="/fly-fishing?fl=true" class="flyout-c3-link qa-cat-nav-c3">Fly Fish</a>
+                    
+                        <a href="/paddle?fl=true" class="flyout-c3-link qa-cat-nav-c3">Paddle</a>
+                    
+                        <a href="/surf?fl=true" class="flyout-c3-link qa-cat-nav-c3">Surf</a>
+                    
+                        <a href="/ski?fl=true" class="flyout-c3-link qa-cat-nav-c3">Ski</a>
+                    
+                        <a href="/snowboard?fl=true" class="flyout-c3-link qa-cat-nav-c3">Snowboard</a>
+                    
+                        <a href="/snowshoe?fl=true" class="flyout-c3-link qa-cat-nav-c3">Snowshoe</a>
+                    
+                        <a href="/travel?fl=true" class="flyout-c3-link qa-cat-nav-c3">Travel Gear</a>
+                    
+                </nav>
+            </div>
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/sc/oru-kayaks?fl=true&amp;INT_ID=IB16750"> 
+        <img data-src="//content.backcountry.com/promo_upload/flyout_assets/oru-editorial-small.gif" alt="Oru Kayaks" class="js-lazyload"> The Backstory: <br>Oru Kayaks <p>Explore Outside the Box</p> 
+    </a> </div> 
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/sc/osloh?INT_ID=IB16705"> 
+        <img data-src="//content.backcountry.com/promo_upload/flyout_assets/osloh-editorial-small.jpg" alt="Osloh" class="js-lazyload"> The Backstory: Osloh <p>Exceptional Bicycle Jeans for Everyday Wear</p> 
+    </a> </div> </div>
+    </div> <!-- / ui-flyout-inner -->
+    
+</div></li>
+    <li class="js-cat-nav-item ui-cat-nav-item qa-cat-nav-c1" data-id="5"><a class="header-c1 js-cat-nav-c1 js-cat-nav-node ui-tab-node qa-cat-nav-link" href="/outlet?fl=true" data-id="5">Outlet</a><div class="ui-flyout-panel js-flyout-panel ui-flyout-id-5 ui-flyout">
+    <div class="ui-flyout-inner">
+        
+            
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                            <a href="/bcs/sale/Mens-Clothing/bcsCat100003/cat.html?fl=true" class="flyout-c2-header header-4">Men</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/bcs/sale/Mens-Jackets/bcsCat110004/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Outerwear</a>
+                            
+                                <a href="/bcs/sale/Mens-Clothing/bcsCat100003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Clothing</a>
+                            
+                                <a href="/bcs/sale/Mens-Shoes-Footwear/bcsCat11000219/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Footwear</a>
+                            
+                                <a href="/bcs/sale/Accessories/bcsCat13000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Accessories</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/bcs/sale/Womens-Clothing/bcsCat200003/cat.html?fl=true" class="flyout-c2-header header-4">Women</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/bcs/sale/Womens-Jackets/bcsCat210004/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Outerwear</a>
+                            
+                                <a href="/bcs/sale/Womens-Clothing/bcsCat200003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Clothing</a>
+                            
+                                <a href="/bcs/sale/Womens-Shoes-Footwear/bcsCat21000144/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Footwear</a>
+                            
+                                <a href="/bcs/sale/Womens-Accessories/bcsCat1310000137/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Accessories</a>
+                            
+                        </nav>
+                    
+                        
+                            <a href="/bcs/sale/Kids-Clothing/bcsCat3000003/cat.html?fl=true" class="flyout-c2-header header-4">Kids</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/bcs/sale/Boys-Clothing/bcsCat3100004/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Boys' Clothing</a>
+                            
+                                <a href="/bcs/sale/Girls-Clothing/bcsCat31000077/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Girls' Clothing</a>
+                            
+                                <a href="/bcs/sale/Toddler/bcsCat310000150/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Toddler</a>
+                            
+                                <a href="/bcs/sale/Infants/bcsCat310000228/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Infant</a>
+                            
+                                <a href="/bcs/sale/Kids-Accessories/cat100201484/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Accessories</a>
+                            
+                        </nav>
+                    
+                </div>
+                <div class="ui-flyout-category ui-flyout-col half">
+                    
+                        
+                            <a href="#" class="flyout-c2-header header-4 flyout-no-link">Shop By Activity</a>
+                        
+                        <nav class="flyout-nav">
+                            
+                                <a href="/bcs/sale/Hike-Camp/bcsCat7000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Hike &amp; Camp</a>
+                            
+                                <a href="/bcs/sale/Bike/bcsCat140000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Bike</a>
+                            
+                                <a href="/bcs/sale/Ski/bcsCat5000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Ski</a>
+                            
+                                <a href="/bcs/sale/Snowboard/bcsCat6000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Snowboard</a>
+                            
+                                <a href="/bcs/sale/Climb/bcsCat8000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Climb</a>
+                            
+                                <a href="/bcs/sale/Paddle/bcsCat9000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Paddle</a>
+                            
+                                <a href="/bcs/sale/Fly-Fishing/bcsCat12000003/cat.html?fl=true" class="flyout-c3-link qa-cat-nav-c3">Fly Fish</a>
+                            
+                        </nav>
+                    
+                </div>
+            
+        
+            <div class="ui-flyout-unique ui-flyout-utility js-flyout-utility">
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/bcs/Womens-Clothing-60-to-80-Off/cat100205247/promo.html?nf=1&amp;p=category%3A1.bcs.Women%27s%5C+Clothing%7CdiscountPercentUS%3A%5B60+TO+*%5D&amp;INT_ID=IB15582&amp;fl=true&amp;INT_ID=IB16549"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/women-outlet-editorial.jpg" alt="Women" s="" outlet="" deals'="" class="js-lazyload"> Women's Outlet Deals <p>From 60% - 80% Off</p> 
+    </a> </div> 
+    <div class="flyout-utility-content editorial"> <a href="http://www.backcountry.com/bcs/Mens-Clothing-60-to-80-Off/cat100205246/promo.html?nf=1&amp;p=category%3A1.bcs.Men%27s%5C+Clothing%7CdiscountPercentUS%3A%5B60+TO+*%5D&amp;INT_ID=IB15582&amp;fl=true&amp;INT_ID=IB16550"> 
+      <img data-src="//content.backcountry.com/promo_upload/flyout_assets/men-outlet-editorial.jpg" alt="Men" s="" outlet="" deals'="" class="js-lazyload"> Men's Outlet Deals <p>From 60% - 80% Off</p> 
+    </a> </div> </div>
+    </div> <!-- / ui-flyout-inner -->
+    
+</div></li>
+  </ul>
+
+  <div style="display: none;">
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" href="/Store/catalog/shopAllBrands.jsp?fl=true" data-title="Brands" data-type="brand" data-cat-id="0">
+      <a class="ui-tab-node" href="/the-north-face?fl=true" data-title="The North Face" data-type="brand"><img alt="The North Face" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/NorthFacelogo2010.jpg">The North Face</a>
+      <a class="ui-tab-node" href="/patagonia?fl=true" data-title="Patagonia" data-type="brand"><img alt="Patagonia" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/patagonia.jpg">Patagonia</a>
+      <a class="ui-tab-node" href="/marmot?fl=true" data-title="Marmot" data-type="brand"><img alt="Marmot" class="js-lazyload" data-src="//content.backcountry.com/promo_upload/brand/logo_monochrome/marmot.png">Marmot</a>
+      <a class="ui-tab-node" href="/arcteryx?fl=true" data-title="Arc'teryx" data-type="brand"><img alt="Arc'teryx" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/arcteryx.jpg">Arc'teryx</a>
+      <a class="ui-tab-node" href="/black-diamond?fl=true" data-title="Black Diamond" data-type="brand"><img alt="Black Diamond" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/BlackDiamondLogo.jpg">Black Diamond</a>
+      <a class="ui-tab-node" href="/prana?fl=true" data-title="prAna" data-type="brand"><img alt="prAna" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/pranalogo.jpg">prAna</a>
+      <a class="ui-tab-node" href="/la-sportiva?fl=true" data-title="La Sportiva" data-type="brand"><img alt="La Sportiva" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/la_sportiva.jpg">La Sportiva</a>
+      <a class="ui-tab-node" href="/osprey-packs?fl=true" data-title="Osprey Packs" data-type="brand"><img alt="Osprey Packs" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/Ospreylogo.jpg">Osprey Packs</a>
+      <a class="ui-tab-node" href="/mountain-hardwear?fl=true" data-title="Mountain Hardwear" data-type="brand"><img alt="Mountain Hardwear" class="js-lazyload" data-src="//content.backcountry.com/images/brand/thumb/MHW2012.jpg">Mountain Hardwear</a>
+      <a class="ui-tab-node" href="/Store/catalog/shopAllBrands.jsp?fl=true">View all brands</a>
+    </div>
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" data-title="Men" data-cat-id="1" href="/rc/mens-technical-outerwear?fl=true">
+      <a class="js-cat-nav-node ui-tab-node" data-id="1-0" href="/rc/mens-technical-outerwear?p=category%3A1.bcs.Men%27s%5C+Clothing&amp;fl=true" data-title="Technical Outerwear">Technical Outerwear</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="1-1" href="/mens-clothing?fl=true" data-title="Clothing">Clothing</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="1-2" href="/mens-shoes-boots?fl=true" data-title="Footwear">Footwear</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="1-3" href="/accessories?fl=true" data-title="Accessories">Accessories</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="1-4" href="" data-title="Shop By Activity">Shop By Activity</a>
+    </div>
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" data-title="Women" data-cat-id="2" href="/womens-clothing?fl=true">
+      <a class="js-cat-nav-node ui-tab-node" data-id="2-0" href="/rc/womens-technical-outerwear?fl=true&amp;p=category%3A1.bcs.Women%27s%5C+Clothing" data-title="Technical Outerwear">Technical Outerwear</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="2-1" href="/womens-clothing?fl=true" data-title="Clothing">Clothing</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="2-2" href="/womens-shoes-boots?fl=true" data-title="Footwear">Footwear</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="2-3" href="/accessories?fl=true" data-title="Accessories">Accessories</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="2-4" href="" data-title="Shop By Activity">Shop By Activity</a>
+    </div>
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" data-title="Kids" data-cat-id="3">
+      <a class="js-cat-nav-node ui-tab-node" data-id="3-0" href="/boys-clothing?fl=true" data-title="Boys">Boys</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="3-1" href="/girls-clothing?fl=true" data-title="Girls">Girls</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="3-2" href="/bcs/Baby-Clothing/cat100203968/promo.html?fl=true" data-title="Toddlers &amp; Infants">Toddlers &amp; Infants</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="3-3" href="/kids-accessories?fl=true" data-title="Accessories">Accessories</a>
+      <a class="ui-tab-node" data-id="3-4" href="/kids-clothing?show=all&amp;p=discountPercentUS%3A%255B10%2BTO%2B*%255D&amp;nf=1&amp;fl=true" data-title="Sale">Sale</a>
+    </div>
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" data-type="activities" data-title="Activities" data-cat-id="4">
+      <a class="ui-tab-node" data-category-id="bcsCat7000003" href="/hike-camp?fl=true" data-title="Hike &amp; Camp">Hike &amp; Camp</a>
+      <a class="ui-tab-node" data-category-id="bcsCat140000003" href="/bike?fl=true" data-title="Bike">Bike</a>
+      <a class="ui-tab-node" data-category-id="bcsCat15000003" href="/run?fl=true" data-title="Run">Run</a>
+      <a class="ui-tab-node" data-category-id="bcsCat8000003" href="/climb?fl=true" data-title="Climb">Climb</a>
+      <a class="ui-tab-node" href="/fly-fishing?fl=true" data-title="Fly Fish">Fly Fish</a>
+      <a class="ui-tab-node" href="/paddle?fl=true" data-title="Paddle">Paddle</a>
+      <a class="ui-tab-node" href="/surf?fl=true" data-title="Surf">Surf</a>
+      <a class="ui-tab-node" href="/ski?fl=true" data-title="Ski">Ski</a>
+      <a class="ui-tab-node" href="/snowboard?fl=true" data-title="Snowboard">Snowboard</a>
+      <a class="ui-tab-node" href="/snowshoe?fl=true" data-title="Snowshoe">Snowshoe</a>
+      <a class="ui-tab-node" href="/travel?fl=true" data-title="Travel Gear">Travel Gear</a>
+    </div>
+    <div class="js-cat-nav-c2 ui-tab-cat-wrap" data-title="Outlet" data-cat-id="5">
+      <a class="js-cat-nav-node ui-tab-node" data-id="5-0" href="/bcs/sale/Mens-Clothing/bcsCat100003/cat.html?fl=true" data-type="outlet" data-title="Men">Men</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="5-1" href="/bcs/sale/Womens-Clothing/bcsCat200003/cat.html?fl=true" data-type="outlet" data-title="Women">Women</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="5-2" href="/bcs/sale/Kids-Clothing/bcsCat3000003/cat.html?fl=true" data-type="outlet" data-title="Kids">Kids</a>
+      <a class="js-cat-nav-node ui-tab-node" data-id="5-3" href="" data-title="Shop By Activity">Shop By Activity</a>
+    </div>
+
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Technical Outerwear" data-cat-id="1-0">
+      <a class="ui-tab-node" href="/rc/mens-technical-outerwear-jackets?fl=true" data-title="Jackets">Jackets</a>
+      <a class="ui-tab-node" href="/rc/mens-technical-outerwear-pants?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Pants&amp;nf=1&amp;fl=true" data-title="Pants">Pants</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Clothing" data-cat-id="1-1">
+      <a class="ui-tab-node" href="/rc/mens-clothing-jackets?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Jackets&amp;nf=1&amp;fl=true" data-title="Jackets">Jackets</a>
+      <a class="ui-tab-node" href="/rc/mens-clothing-tops?p=category%3A1.bcs.Men%27s%5C+Clothing&amp;fl=true" data-title="Tops">Tops</a>
+      <a class="ui-tab-node" href="/rc/mens-clothing-bottoms?p=category%3A1.bcs.Men%27s%5C+Clothing&amp;fl=true" data-title="Bottoms">Bottoms</a>
+      <a class="ui-tab-node" href="/mens-underwear-baselayers?fl=true" data-title="Baselayers">Baselayers</a>
+      <a class="ui-tab-node" href="/rc/mens-swimwear?fl=true" data-title="Swimwear">Swimwear</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Footwear" data-cat-id="1-2">
+      <a class="ui-tab-node" href="/rc/mens-footwear-boots?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Men%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" data-title="Boots">Boots</a>
+      <a class="ui-tab-node" href="/rc/mens-footwear-shoes?p=category%253A2.bcs.Shoes%255C%2B%255C%2526%255C%2BFootwear.Men%2527s%255C%2BShoes%255C%2B%255C%2526%255C%2BBoots&amp;fl=true" data-title="Shoes">Shoes</a>
+      <a class="ui-tab-node" href="/mens-sandals?fl=true" data-title="Sandals">Sandals</a>
+      <a class="ui-tab-node" href="/mens-slippers?fl=true" data-title="Slippers">Slippers</a>
+      <a class="ui-tab-node" href="/mens-socks?fl=true" data-title="Socks">Socks</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Accessories" data-cat-id="1-3">
+      <a class="ui-tab-node" href="/rc/mens-accessories-head-and-neckwear?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Accessories&amp;nf=1&amp;fl=true" data-title="Head &amp; Neck Wear">Head &amp; Neck Wear</a>
+      <a class="ui-tab-node" href="/rc/mens-accessories-eyewear?p=category%3A1.bcs.Accessories&amp;fl=true" data-title="Eyewear">Eyewear</a>
+      <a class="ui-tab-node" href="/gloves-mittens?fl=true" data-title="Gloves &amp; Mittens">Gloves &amp; Mittens</a>
+      <a class="ui-tab-node" href="/rc/mens-accessories-electronics?p=category%3A1.bcs.Accessories&amp;fl=true" data-title="Electronics">Electronics</a>
+      <a class="ui-tab-node" href="/watches?fl=true" data-title="Watches">Watches</a>
+      <a class="ui-tab-node" href="/rc/mens-accessories-backpacks-and-bags?fl=true" data-title="Backpacks &amp; Bags">Backpacks &amp; Bags</a>
+      <a class="ui-tab-node" href="/rc/mens-accessories-belts-and-wallets?p=category%3A2.bcs.Men%27s%5C+Clothing.Men%27s%5C+Accessories&amp;nf=1&amp;fl=true" data-title="Belts &amp; Wallets">Belts &amp; Wallets</a>
+      <a class="ui-tab-node" href="/accessories?fl=true" data-title="All">All</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Shop By Activity" data-cat-id="1-4">
+      <a class="ui-tab-node" href="/Store/catalog/search.jsp?q=Men%27s+Clothing&amp;nf=1&amp;p=category%3A1.bcs.Men%27s%5C+Clothing%7Crecommendeduse%3AHiking%5C+%5C%26%5C+Camping&amp;fl=true" data-title="Hike &amp; Camp">Hike &amp; Camp</a>
+      <a class="ui-tab-node" href="/mens-bike-clothing?fl=true" data-title="Bike">Bike</a>
+      <a class="ui-tab-node" href="/mens-ski-clothing?fl=true" data-title="Ski">Ski</a>
+      <a class="ui-tab-node" href="/mens-snowboard-clothing?fl=true" data-title="Snowboard">Snowboard</a>
+      <a class="ui-tab-node" href="/Store/catalog/search.jsp?nf=1&amp;q=Men%27s+Clothing&amp;p=category%253A1.bcs.Men%2527s%255C%2BClothing%257Cattr_recommendeduse%253AClimbing%257Cattr_recommendeduse%253ASport%255C%2BClimbing%257Cattr_recommendeduse%253AAlpine%255C%2BClimbing%257Cattr_recommendeduse%253AHiking%255C%2B%255C%252F%255C%2BClimbing&amp;fl=true" data-title="Climb">Climb</a>
+      <a class="ui-tab-node" href="/mens-running-clothing?fl=true" data-title="Run">Run</a>
+      <a class="ui-tab-node" href="/mens-fly-fishing-apparel?fl=true" data-title="Fly Fish">Fly Fish</a>
+    </div>
+
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Technical Outerwear" data-cat-id="2-0">
+      <a class="ui-tab-node" href="/rc/womens-technical-outerwear-jackets?p=category%3A2.bcs.Women%27s%5C+Clothing.Women%27s%5C+Jackets&amp;nf=1&amp;fl=true" data-title="Jackets">Jackets</a>
+      <a class="ui-tab-node" href="/rc/womens-technical-outerwear-pants?p=category%3A2.bcs.Women%27s%5C+Clothing.Women%27s%5C+Pants&amp;nf=1&amp;fl=true" data-title="Pants">Pants</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Clothing" data-cat-id="2-1">
+      <a class="ui-tab-node" href="/rc/womens-clothing-jackets?p=category%3A2.bcs.Women%27s%5C+Clothing.Women%27s%5C+Jackets&amp;nf=1&amp;fl=true" data-title="Jackets">Jackets</a>
+      <a class="ui-tab-node" href="/womens-tops?fl=true" data-title="Tops">Tops</a>
+      <a class="ui-tab-node" href="/rc/womens-clothing-bottoms?p=category%253A1.bcs.Women%2527s%255C%2BClothing&amp;fl=true" data-title="Bottoms">Bottoms</a>
+      <a class="ui-tab-node" href="/womens-dresses-skirts?fl=true" data-title="Dresses &amp; Skirts">Dresses &amp; Skirts</a>
+      <a class="ui-tab-node" href="/womens-long-underwear-baselayers?fl=true" data-title="Baselayers">Baselayers</a>
+      <a class="ui-tab-node" href="/womens-swimwear?fl=true" data-title="Swimwear">Swimwear</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Footwear" data-cat-id="2-2">
+      <a class="ui-tab-node" href="/rc/womens-footwear-boots?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Women%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" data-title="Boots">Boots</a>
+      <a class="ui-tab-node" href="/rc/womens-footwear-shoes?p=category%3A2.bcs.Shoes%5C+%5C%26%5C+Footwear.Women%27s%5C+Shoes%5C+%5C%26%5C+Boots&amp;nf=1&amp;fl=true" data-title="Shoes">Shoes</a>
+      <a class="ui-tab-node" href="/womens-sandals?fl=true" data-title="Sandals">Sandals</a>
+      <a class="ui-tab-node" href="/womens-slippers?fl=true" data-title="Slippers">Slippers</a>
+      <a class="ui-tab-node" href="/womens-socks?fl=true" data-title="Socks">Socks</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Accessories" data-cat-id="2-3">
+      <a class="ui-tab-node" href="/rc/womens-accessories-head-and-neckwear?p=category%3A2.bcs.Accessories.Women%27s%5C+Accessories&amp;nf=1&amp;fl=true" data-title="Head &amp; Neck Wear">Head &amp; Neck Wear</a>
+      <a class="ui-tab-node" href="/womens-sunglasses?fl=true" data-title="Sunglasses">Sunglasses</a>
+      <a class="ui-tab-node" href="/womens-gloves-mittens?fl=true" data-title="Gloves &amp; Mittens">Gloves &amp; Mittens</a>
+      <a class="ui-tab-node" href="/rc/womens-accessories-electronics?p=category%3A1.bcs.Accessories&amp;fl=true" data-title="Electronics">Electronics</a>
+      <a class="ui-tab-node" href="/rc/watches-for-women?fl=true&amp;p=category%3A2.bcs.Accessories.Watches&amp;nf=1" data-title="Watches">Watches</a>
+      <a class="ui-tab-node" href="/rc/womens-accessories-handbags?p=category%3A2.bcs.Accessories.Women%27s%5C+Accessories&amp;nf=1&amp;fl=true" data-title="Handbags">Handbags</a>
+      <a class="ui-tab-node" href="/Store/catalog/search.jsp?q=women%27s%20backpacks&amp;p=category%3A1.bcs.Hike%255C%2B%255C%2526%255C%2BCamp&amp;nf=1&amp;fl=true" data-title="Backpacks">Backpacks</a>
+      <a class="ui-tab-node" href="/womens-belts?fl=true" data-title="Belts">Beltss</a>
+      <a class="ui-tab-node" href="/accessories?fl=true" data-title="All">All</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Shop By Activity" data-cat-id="2-4">
+      <a class="ui-tab-node" href="/rc/womens-hiking-apparel?p=category%3A1.bcs.Women%27s%5C+Clothing&amp;fl=true" data-title="Hike &amp; Camp">Hike &amp; Camp</a>
+      <a class="ui-tab-node" href="/womens-bike-clothing?fl=true" data-title="Bike">Bike</a>
+      <a class="ui-tab-node" href="/womens-ski-clothing?fl=true" data-title="Ski">Ski</a>
+      <a class="ui-tab-node" href="/womens-snowboard-clothing?fl=true" data-title="Snowboard">Snowboard</a>
+      <a class="ui-tab-node" href="/Store/catalog/search.jsp?q=climbing%20womens&amp;p=category%3A1.bcs.Women%2527s%255C%2BClothing&amp;nf=1&amp;fl=true" data-title="Climb">Climb</a>
+      <a class="ui-tab-node" href="/womens-running-clothing?fl=true" data-title="Run">Run</a>
+      <a class="ui-tab-node" href="/rc/womens-yoga-clothing?p=category%253A1.bcs.Women%2527s%255C%2BClothing&amp;fl=true" data-title="Yoga">Yoga</a>
+    </div>
+
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Boys" data-cat-id="3-0">
+      <a class="ui-tab-node" href="/rc/boys-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Boys%27%5C+Clothing&amp;nf=1&amp;fl=true" data-title="Outerwear">Outerwear</a>
+      <a class="ui-tab-node" href="/boys-clothing?fl=true" data-title="Clothing">Clothing</a>
+      <a class="ui-tab-node" href="/boys-boots-shoes?fl=true" data-title="Footwear">Footwear</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Girls" data-cat-id="3-1">
+      <a class="ui-tab-node" href="/rc/girls-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Girls%27%5C+Clothing&amp;nf=1&amp;fl=true" data-title="Outerwear">Outerwear</a>
+      <a class="ui-tab-node" href="/girls-clothing?fl=true" data-title="Clothing">Clothing</a>
+      <a class="ui-tab-node" href="/girls-boots-shoes?fl=true" data-title="Footwear">Footwear</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Toddlers &amp; Infants" data-cat-id="3-2">
+      <a class="ui-tab-node" href="/rc/toddler-infants-outerwear?p=category%3A2.bcs.Kids%27%5C+Clothing.Toddler&amp;nf=1&amp;fl=true" data-title="Outerwear">Outerwear</a>
+      <a class="ui-tab-node" href="/bcs/Baby-Clothing/cat100203968/promo.html?fl=true" data-title="Clothing">Clothing</a>
+      <a class="ui-tab-node" href="/rc/baby-clothing?p=category%3A1.bcs.Shoes%5C+%5C%26%5C+Footwear&amp;fl=true" data-title="Footwear">Footwear</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Accessories" data-cat-id="3-3">
+      <a class="ui-tab-node" href="/kids-hats?fl=true" data-title="Headwear">Headwear</a>
+      <a class="ui-tab-node" href="/rc/kids-eyewear?p=category%3A2.bcs.Accessories.Kids%27%5C+Accessories&amp;nf=1&amp;fl=true" data-title="Eyewear">Eyewear</a>
+      <a class="ui-tab-node" href="/kids-gloves-mittens?fl=true" data-title="Gloves &amp; Mittens">Gloves &amp; Mittens</a>
+      <a class="ui-tab-node" href="/strollers-and-joggers?fl=true" data-title="Strollers &amp; Joggers">Strollers &amp; Joggers</a>
+    </div>
+
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Men" data-cat-id="5-0">
+      <a class="ui-tab-node" href="/bcs/sale/Mens-Jackets/bcsCat110004/cat.html?fl=true" data-title="Outerwear">Outerwear</a>
+      <a class="ui-tab-node" href="/bcs/sale/Mens-Clothing/bcsCat100003/cat.html?fl=true" data-title="Clothing">Clothing</a>
+      <a class="ui-tab-node" href="/bcs/sale/Mens-Shoes-Footwear/bcsCat11000219/cat.html?fl=true" data-title="Footwear">Footwear</a>
+      <a class="ui-tab-node" href="/bcs/sale/Accessories/bcsCat13000003/cat.html?fl=true" data-title="Accessories">Accessories</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Women" data-cat-id="5-1">
+      <a class="ui-tab-node" href="/bcs/sale/Womens-Jackets/bcsCat210004/cat.html?fl=true" data-title="Outerwear">Outerwear</a>
+      <a class="ui-tab-node" href="/bcs/sale/Womens-Clothing/bcsCat200003/cat.html?fl=true" data-title="Clothing">Clothing</a>
+      <a class="ui-tab-node" href="/bcs/sale/Womens-Shoes-Footwear/bcsCat21000144/cat.html?fl=true" data-title="Footwear">Footwear</a>
+      <a class="ui-tab-node" href="/bcs/sale/Womens-Accessories/bcsCat1310000137/cat.html?fl=true" data-title="Accessories">Accessories</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Kids" data-cat-id="5-2">
+      <a class="ui-tab-node" href="/bcs/sale/Boys-Clothing/bcsCat3100004/cat.html?fl=true" data-title="Boys' Clothing">Boys' Clothing</a>
+      <a class="ui-tab-node" href="/bcs/sale/Girls-Clothing/bcsCat31000077/cat.html?fl=true" data-title="Girls' Clothing">Girls' Clothing</a>
+      <a class="ui-tab-node" href="/bcs/sale/Toddler/bcsCat310000150/cat.html?fl=true" data-title="Toddler">Toddler</a>
+      <a class="ui-tab-node" href="/bcs/sale/Infants/bcsCat310000228/cat.html?fl=true" data-title="Infant">Infant</a>
+      <a class="ui-tab-node" href="/bcs/sale/Kids-Accessories/cat100201484/cat.html?fl=true" data-title="Accessories">Accessories</a>
+    </div>
+    <div class="js-cat-nav-c3 ui-tab-cat-wrap" data-title="Shop By Activity" data-cat-id="5-3">
+      <a class="ui-tab-node" href="/bcs/sale/Hike-Camp/bcsCat7000003/cat.html?fl=true" data-title="Hike &amp; Camp">Hike &amp; Camp</a>
+      <a class="ui-tab-node" href="/bcs/sale/Bike/bcsCat140000003/cat.html?fl=true" data-title="Bike">Bike</a>
+      <a class="ui-tab-node" href="/bcs/sale/Ski/bcsCat5000003/cat.html?fl=true" data-title="Ski">Ski</a>
+      <a class="ui-tab-node" href="/bcs/sale/Snowboard/bcsCat6000003/cat.html?fl=true" data-title="Snowboard">Snowboard</a>
+      <a class="ui-tab-node" href="/bcs/sale/Climb/bcsCat8000003/cat.html?fl=true" data-title="Climb">Climb</a>
+      <a class="ui-tab-node" href="/bcs/sale/Paddle/bcsCat9000003/cat.html?fl=true" data-title="Paddle">Paddle</a>
+      <a class="ui-tab-node" href="/bcs/sale/Fly-Fishing/bcsCat12000003/cat.html?fl=true" data-title="Fly Fish">Fly Fish</a>
+    </div>
+  </div>
+
+  <div class="brands-listing-wrapper" style="display: none;">
+    <a href="/salomon?fl=true" data-title="Salomon"></a>
+    <a href="/mammut?fl=true" data-title="Mammut"></a>
+    <a href="/columbia?fl=true" data-title="Columbia"></a>
+    <a href="/norrona?fl=true" data-title="Norrøna"></a>
+    <a href="/oakley?fl=true" data-title="Oakley"></a>
+    <a href="/big-agnes?fl=true" data-title="Big Agnes"></a>
+    <a href="/outdoor-research?fl=true" data-title="Outdoor Research"></a>
+    <a href="/canada-goose?fl=true" data-title="Canada Goose"></a>
+    <a href="/smartwool?fl=true" data-title="SmartWool"></a>
+    <a href="/kuhl?fl=true" data-title="KÜHL"></a>
+    <a href="/icebreaker?fl=true" data-title="Icebreaker"></a>
+    <a href="/smith?fl=true" data-title="Smith"></a>
+    <a href="/dakine?fl=true" data-title="DAKINE"></a>
+    <a href="/santa-cruz-bicycles?fl=true" data-title="Santa Cruz Bicycles"></a>
+    <a href="/castelli?fl=true" data-title="Castelli"></a>
+    <a href="/petzl?fl=true" data-title="Petzl"></a>
+    <a href="/under-armour?fl=true" data-title="Under Armour"></a>
+    <a href="/shimano?fl=true" data-title="Shimano"></a>
+    <a href="/giro?fl=true" data-title="Giro"></a>
+    <a href="/burton?fl=true" data-title="Burton"></a>
+    <a href="/louis-garneau?fl=true" data-title="Louis Garneau"></a>
+    <a href="/therm-a-rest?fl=true" data-title="Therm-a-Rest"></a>
+    <a href="/thule?fl=true" data-title="Thule"></a>
+    <a href="/scarpa?fl=true" data-title="Scarpa"></a>
+  </div>
+
+  <div class="js-detour-panel-wrap" style="display: none;">
+    <div class="detour-panel-header">
+      <img class="detour-logo js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/logo-detour-black-retina.png" alt="Detour Logo">
+      <nav class="detour-activities-listing">
+        <div class="detour-icon ski"><img class="js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/ski.png" alt="Ski"></div>
+        <div class="detour-icon climb"><img class="js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/climb.png" alt="Climb"></div>
+        <div class="detour-icon mountaineer"> <img class="js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/mountaineer.png" alt="Mountaineer"></div>
+        <div class="detour-icon fly-fish"><img class="js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/fly-fish.png" alt="Fly Fish"></div>
+        <div class="detour-icon bike"><img class="js-lazyload" data-src="//content.backcountry.com/promo_upload/flyout_assets/detour_panel/bike.png" alt="Detour Bike"></div>
+      </nav>
+      <p>Hire a Local Adventure Guide</p>
+    </div>
+    <div class="detour-panel-body">
+      <nav>
+        <a class="ui-tab-node" href="//detour.backcountry.com/location/northern-california">NorCal</a>
+        <a class="ui-tab-node" href="//detour.backcountry.com/location/saltlakecity">Utah</a>
+        <a class="ui-tab-node" href="//detour.backcountry.com/location/colorado">Colorado</a>
+        <a class="ui-tab-node" href="//detour.backcountry.com/location/northeast-us">Northeast</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="js-articles-panel-wrap" data-title="Explore" style="display: none;">
+    <a href="/explore" class="js-hp-art-link ui-tab-node">All</a>
+    <a href="/explore?topics=places" class="js-hp-art-link ui-tab-node">Places</a>
+    <a href="/explore?topics=gear" class="js-hp-art-link ui-tab-node">Gear</a>
+    <a href="/explore?topics=tips" class="js-hp-art-link ui-tab-node">Tips</a>
+    <a href="/explore?topics=culture" class="js-hp-art-link ui-tab-node">Culture</a>
+  </div>
+</nav></div>
+    <div class="header-search-wrap js-search-box" id="search-box">
+    <form id="search" class="form-search js-form-search" action="/Store/catalog/search.jsp" autocomplete="off">
+          <input autocomplete="off" class="form-search-input js-form-search-input" id="search_term" name="q" placeholder="Search gear, clothing, &amp; more..." spellcheck="false" type="text" data-ui-url="//api.backcountry.com/v1/suggestions" data-ui-type="json">
+          <button class="search-reset-btn" type="button" id="head-search-reset"></button>
+          <button class="search-submit-btn" type="submit" id="head-search-button"></button>
+          <input name="s" type="hidden" class="js-search-term-source" id="search-term-source" value="u">
+        </form>
+      </div>
+</div>
+  <div class="main-header-promo">
+    <style>
+/* Smartphones----------- */
+@media screen and (max-device-width : 480px) {
+.hide-mobile { display: none;}
+}
+.main-header-promo a {color: #E48325;}
+</style>
+<a href="#shipping-rules" class="popup-link" data-ui="{&quot;remoteDialog&quot;: { &quot;href&quot; : &quot;/Store/content/contentDescription.jsp?id=bcs-freeTwoDayShipping&quot;}}">
+Free 2-Day Shipping on Orders Over $50*<span class="hide-mobile"> - Limited Time Only</span>
+</a></div>
+  <div id="headerTagging">
+    <div id="headerTaggingTool">
+        </div>
+    </div>
+  <script type="text/javascript">$.publish('header.domReady');</script>
+</header>
+
+
+
 <%= yield %>
 
 </body>
