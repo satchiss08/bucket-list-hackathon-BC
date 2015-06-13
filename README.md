@@ -1,1 +1,0 @@
-# bucket-list-hackathon-BC
