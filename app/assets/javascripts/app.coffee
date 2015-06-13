@@ -18,16 +18,16 @@ bucket_list.config([ '$routeProvider', 'flashProvider',
     $routeProvider
       .when('/',
         templateUrl: "index.html"
-        controller: 'RecipesController'
-      ).when('/recipes/new',
+        controller: 'BucketListController'
+      ).when('/activities/new',
         templateUrl: "form.html"
-        controller: 'RecipeController'
-      ).when('/recipes/:recipeId',
+        controller: 'ActivityController'
+      ).when('/activities/:activityId',
         templateUrl: "show.html"
-        controller: 'RecipeController'
-      ).when('/recipes/:recipeId/edit',
+        controller: 'ActivityController'
+      ).when('/activities/:activitiesId/edit',
         templateUrl: "form.html"
-        controller: 'RecipeController'
+        controller: 'ActivityController'
       )
 ])
 
