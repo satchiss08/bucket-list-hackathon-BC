@@ -1,1 +1,1 @@
-json.partial! 'activity', recipe: @activity
+json.partial! 'activity', activity: @activity

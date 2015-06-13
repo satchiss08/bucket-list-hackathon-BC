@@ -1,1 +1,1 @@
-json.(@activity, :id, :name, :place)
+json.(activity, :id, :name, :place)

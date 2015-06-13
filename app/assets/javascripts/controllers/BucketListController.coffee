@@ -3,6 +3,8 @@ controllers.controller("BucketListController", [ '$scope', '$routeParams', '$loc
   ($scope,$routeParams,$location,$resource)->
     Activity = $resource('/activities/:activityId', { activityId: "@id", format: 'json' })
 
+    Activity.query(keywords: $routeParams.keywords, (results)-> $scope.activities = results)
+
     $scope.view = (activityId)-> $location.path("/activities/#{activityId}")
 
     $scope.newActivity = -> $location.path("/activities/new")

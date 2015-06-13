@@ -1,4 +1,5 @@
-<header class="row">
+<header class="row bucket-list-wrapper">
+  <h1 class="title text-center col-md-6 col-md-offset-3">Bucket List</h1>
 </header>
 <section class="row">
   <form>
@@ -8,18 +9,54 @@
         New Activity</button>
     </div>
   </form>
-</section>
-<hr>
-<section class="row" ng-if="activities">
-  <h1 class="text-center h2">Results</h1>
-  <ul class="list-unstyled">
-    <li ng-repeat="recipe in recipes">
-      <section class="well col-md-6 col-md-offset-3">
-        <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href ng-click="view(activity.id)" >{{activity.name}}</a></h1>
-        <div class="col-md-6">
-          <button ng-click="edit(activity.id)" class="btn btn-info">Edit</button>
+<div class="container">
+    <div class="row">
+      <div class="adventure biking">
+      <div class="col-md-6 adventure-text">
+          <p class="title">Biking</p>
+          <p class="location">Yosemite</p>
         </div>
-      </section>
-    </li>
-  </ul>
+            <div class="col-md-6 adventure-buttons">
+              <button ng-click="view(1)" class="btn-adventure">Go To Adventure</button>
+              <button ng-click="" class="btn-guide">Ask A Guide</button>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="adventure hiking">
+    <div class="col-md-6 adventure-text">
+       <p class="title">Hiking</p> 
+       <p class="location">Grand Canyon</p>
+    </div>
+        <div class="col-md-6 adventure-buttons">
+          <button ng-click="view(2)" class="btn-adventure">Go To Adventure</button>
+          <button ng-click="" class="btn-guide">Ask A Guide</button>
+        </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="adventure skiing">
+    <div class="col-md-6 adventure-text">
+      <p class="title">Skiing</p>
+      <p class="location">Alaska</p>
+      </div>
+        <div class="col-md-6 adventure-buttons">
+          <button ng-click="view(3)" class="btn-adventure">Go To Adventure</button>
+          <button ng-click="" class="btn-guide">Ask A Guide</button>
+        </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="adventure snowboarding">
+    <div class="col-md-6 adventure-text">
+      <p class="title">Snowboarding</p>
+      <p class="location">Alpes</p>
+      </div>
+        <div class="col-md-6 adventure-buttons">
+          <button ng-click="view(4)" class="btn-adventure">Go To Adventure</button>
+          <button ng-click="" class="btn-guide">Ask A Guide</button>
+        </div>
+  </div>
+  </div>
+  </div>
 </section>
