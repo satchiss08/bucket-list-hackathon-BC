@@ -7,5 +7,5 @@ Things you may want to know:
 
 * Ruby version: ruby 2.2.1p85
 * RVM version: rvm 1.26.11
-* Rails version: Rails 4.2.1
+* Rails version: Rails 4.2.1 
 * gemset: ruby-2.2.1@bucket-list-hackathon-BC

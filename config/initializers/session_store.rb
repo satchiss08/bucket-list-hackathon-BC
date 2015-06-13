@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Rails.application.config.session_store :cookie_store, key: '_bucket-list-hackathon-BC_session'
+Receta::Application.config.session_store :cookie_store, key: '_receta_session'

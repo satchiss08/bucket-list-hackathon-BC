@@ -1,5 +1,5 @@
-Rails.application.routes.draw do
+Receta::Application.routes.draw do
   root 'home#index'
 
-  resources :bucket_list, only: [:index]
+  resources :recipes, only: [:index, :show, :create, :update, :destroy]
 end
