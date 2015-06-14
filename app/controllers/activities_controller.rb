@@ -10,7 +10,7 @@ class ActivitiesController < ApplicationController
   end
 
   def create
-    @activity = Activity.new(params.require(:activity).permit(:name,:place))
+    @activity = Activity.create(name: "Snowboarding", place: params[:place], started_at: params[:started_at], ended_at: params[:ended_at])
     @activity.save
     render 'show', status: 201
   end

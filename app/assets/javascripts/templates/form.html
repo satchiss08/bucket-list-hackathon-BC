@@ -1,31 +1,161 @@
-<aside class="flash row">
-  <article flash-alert duration="0" active-class="alert" class="col-md-6 col-md-offset-3">
-    {{flash.message}}
-  </article>
-</aside>
-<form class="form-horizontal" role="form" class="edit-user">
-  <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
-    <label 
-      for="name" 
-      class="col-md-2 control-label col-md-offset-2">
-      Name
-    </label>
-    <div class="col-md-5">
-      <input type="text" name="name" class="form-control" placeholder="e.g. Biking" ng-model="activity.name">
+<div class="jumbotron">
+  <div class="container">
+    <p class="adventure-form-text">I want to go
+    <select class="dropdown-adventure">
+      <option value="volvo">Snowboard</option>
+      <option value="saab">Ski</option>
+      <option value="opel">Hiking</option>
+      <option value="audi">Running</option>
+      <option value="audi">Biking</option>
+    </select> at <input class="input-adventure" type="text" ng-model="activity.place"></p>
+    <p>from </h2><input class="input-adventure" type="text" ng-model='activity.started_at'> to <input class="input-adventure" type="text" ng-model='activity.ended_at'></p>
     </div>
+</div>
+
+<h1>Snowboards</h1>
+<div class="container"><div class="row">
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/BUR/BUR00OX/TEA.jpg"><br>
+    <label class="center">Burton</label><br>
+    <label class="center">Custom Flying V Snowboard</label><br>
+    <label class="center">$569.95</label><br>
+
+    <button class="center">Add to Activity</button><br>
+    <button class="center">Buy</button>
   </div>
-  <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
-    <label 
-      for="instructions" 
-      class="col-md-2 control-label col-md-offset-2">
-      Place
-    </label>
-    <div class="col-md-5">
-      <textarea name="place" class="form-control" ng-model='activity.place' placeholder="e.g. Costa Rica">
-      </textarea>
-    </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/CPT/CPT001Q/S147CM.jpg"><br>
+    <label>Capita</label><br>
+    <label>UltraFear FK Snowboard</label><br>
+    <label>$469.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
   </div>
-  <div class="form-group">
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/LBT/LBT001I/ONECOL.jpg"><br>
+    <label>Lib Technologies</label><br>
+    <label>TRS XC2-BTX Snowboard</label><br>
+    <label>$559.95</label><br>
+
+    <button>Add to Activity</button>
+    <button>Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/BUR/BUR00NZ/GRE.jpg"><br>
+    <label>Burton</label><br>
+    <label>Custom X Snowboard</label><br>
+    <label>$669.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
+  </div>
+</div>
+
+<h1>Snowboard Boots</h1>
+<div class="container"><div class="row">
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/BUR/BUR00JR/PUR.jpg"><br>
+    <label class="center">Burton</label><br>
+    <label class="center">Ion Snowboard Boot - Men's</label><br>
+    <label class="center">$449.95</label><br>
+
+    <button class="center">Add to Activity</button><br>
+    <button class="center">Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/BUR/BUR00K2/BK.jpg"><br>
+    <label>Burton</label><br>
+    <label>Imperial Snowboard Boot - Men's</label><br>
+    <label>$299.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/BUR/BUR00KB/PUPRI.jpg"><br>
+    <label>Burton </label><br>
+    <label>Mint Snowboard Boot - Men's</label><br>
+    <label>$169.95</label><br>
+
+    <button>Add to Activity</button>
+    <button>Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/BUR/BUR00KH/BLA.jpg"><br>
+    <label>Burton</label><br>
+    <label>SLX Snowboard Boot - Men's</label><br>
+    <label>$579.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
+  </div>
+</div>
+
+<h1>Snowboard Bindings</h1>
+
+<div class="container"><div class="row">
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com//images/items/medium/UNN/UNN000J/BK.jpg"><br>
+    <label class="center">Union</label><br>
+    <label class="center">Factory Binding</label><br>
+    <label class="center">$269.95</label><br>
+
+    <button class="center">Add to Activity</button><br>
+    <button class="center">Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/BUR/BUR00JB/YEL.jpg"><br>
+    <label>Burton</label><br>
+    <label>Cartel Re:Flex Snowboard Binding</label><br>
+    <label>$239.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/UNN/UNN000L/METBL.jpg"><br>
+    <label>Union </label><br>
+    <label>Force Snowboard Binding</label><br>
+    <label>$219.95</label><br>
+
+    <button>Add to Activity</button>
+    <button>Buy</button>
+  </div>
+  </div>
+</div>
+
+<h1>Snowboard Helmets & Impact Clothing</h1>
+<div class="container"><div class="row">
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/DEM/DEM000G/BK.jpg"><br>
+    <label class="center">Demon Snow</label><br>
+    <label class="center">Flex-Force Pro Top Body Armor - Men's</label><br>
+    <label class="center">$149.95</label><br>
+
+    <button class="center">Add to Activity</button><br>
+    <button class="center">Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/POC/POC0159/WH.jpg"><br>
+    <label>POC</label><br>
+    <label>Fornix Helmet</label><br>
+    <label>$159.95</label><br>
+
+    <button>Add to Activity</button><br>
+    <button>Buy</button>
+  </div>
+  <div class="col-md-3">
+    <img src="http://www.backcountry.com/images/items/medium/BLD/BLD0697/BK.jpg"><br>
+    <label>Black Diamond </label><br>
+    <label>Telekneesis Kneepad</label><br>
+    <label>$49.95,</label><br>
+
+    <button>Add to Activity</button>
+    <button>Buy</button>
+  </div>
+  </div>
+<div class="form-group">
     <div class="col-md-offset-2 col-md-3">
       <button class="btn btn-default" ng-click="cancel()"> Cancel</button>
     </div>
@@ -33,4 +163,4 @@
       <button class="btn btn-primary" ng-click="save()"> Save </button>
     </div>
   </div>
-</section>
+</div>
