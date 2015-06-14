@@ -69,6 +69,11 @@
   	vertical-align: bottom;
 }
 
+.form-jumbotron .container {
+	text-align: center;
+	padding-top: 460px;
+}
+
 .hiking {
 	background-image: url(../images/hiking.jpg);
 }
@@ -142,7 +147,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #000 url("../images/snowboarding.jpg") center center;
     background-color:rgba(0,0,0,0.5);
     width: 100%;
-    height: 408px;
+    height: 808px;
     background-size: cover;
     overflow: hidden;
 }
