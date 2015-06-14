@@ -167,3 +167,8 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.margin-title {
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+}
